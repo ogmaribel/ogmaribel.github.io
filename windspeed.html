@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Latitude Analysis</title>
+
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header>
+    <!-- The container is inside the nav so it stretches to the screen -->
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container-fuid"> <!-- Regular container to change the width based on the width of the browser, the fluid streches to the secreen -->
+                <div class="navbar-header"><!-- To get a better mobile display -->
+                    <!-- The image is set to the left so the following text do not stac, also it will only visible when the screen size is medium or large -->
+                    <a href="start.html" class="pull-left"> 
+                        <div id="logo-img"></div>
+                    </a>
+                    <div class="navbar-brand" class="pull-left"> <!-- Is recommended that the name of the wp be inside the navbar-brand-->
+                        <a href="start.html"><h1>Latitude Analysis</h1></a>
+                    </div>
+
+                    <!-- navbar-toggle controls the position and it is displayed when it is less than medium size-->
+                    <!-- collapse is a class from js and it pull the menu down and up-->
+                    <!-- Collapsable nav will include the menues that will be dissapearing-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> <!-- sr. only means that it will not be rendered-->
+                        <span class="icon-bar"></span> <!-- The number of lines that the button will display-->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div> <!-- closes navbar-header -->
+
+                <!-- The option buttons are placed bellow navbar header so the effects are not included -->  
+                <!-- We are selectiong the Collapsable nav as the id to know were the target will be-->
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <!-- nav navbar will be the classes that will create the down menu and navbar right will float everything to the right-->
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="start.html">
+                                <!-- glyphicon brings an icon font the hidden-xs class means that the break space will be away when the screen size is extra small-->
+                                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home
+                            </a>
+                        </li>
+                        <li id ="drop_down"  class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-down"></span><br class="hidden-xs"> Plots</a>
+                                <p  class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                                    <br>
+                                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                    <br>
+                                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                    <br>
+                                    <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                                </p>
+                            </li> 
+                        <li>
+                            <a href="comparison.html">
+                                <span class="glyphicon glyphicon-stats"></span><br class="hidden-xs"> Comparison
+                            </a>
+                        </li>
+                        <li>
+                            <a href="data.html">
+                            <span class="glyphicon glyphicon-list-alt"></span><br class="hidden-xs"> Data
+                            </a>
+                        </li>
+                        
+                    </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
+
+            </div><!-- .container -->
+        </nav><!-- #header-nav -->
+    </header>
+
+    <div id="plots-content" class="container">
+        <!-- #Jumbotron is used to call extra attention -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Wind Speed</h1>
+                 <hr class="my-4">
+                 <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                    <img  src="./images/Fig4.1.png" alt="Temperature Graph">  
+                </div> 
+                <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                <p>
+                        Eventhough the pattern is not too noticeable, the wind speed seems to increase
+                         the further away from the equator (0 Deg. Latitude). 
+                </p>
+                <p>
+                    The previous pattern is visible when observing tha values that are closer to the poles are significantly
+                    higher.
+                </p>
+                </div>
+            </div>
+        </div><!-- End of jumbotron -->
+        <!-- Add the plots images in the main page defining the view according with the screen sizes -->
+        <!-- We set an id to modify the parameters of those image in the style.css -->
+        <div id="home-tiles" class="row"></div>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <a href="temperature.html"><div id="box-t"><span>Temperature</span></div></a>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <a href="humidity.html"><div id="box-h"><span>Humidity</span></div></a>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <a href="cloudiness.html"><div id="box-c"><span>Cloudiness</span></div></a>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-6">
+                <a href="windspeed.html"><div id="box-w"><span>Wind-Speed</span></div></a>
+            </div>
+      
+        </div><!-- End of #home-tiles -->
+        </div><!-- End of #main-content -->
+
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="text-center">&copy; Copyright Maribel Ojeda 2019</div>
+        </div>
+    </footer>
+        
+       
+
+</body>
+</html>

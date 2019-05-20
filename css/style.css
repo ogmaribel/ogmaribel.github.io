@@ -1,0 +1,364 @@
+body {
+    font-size: 16px;
+    color: #0F0F0F;
+    background-color: black;
+    font-family: 'Oxygen', sans-serif; /* www.google.com/fonts */
+  }
+/** HEADER **/
+#header-nav {/* I whant that the header fill the wholw screen */
+  background-color: white; 
+  border-radius: 0;
+  border: 0;
+}
+#logo-img {
+  background: url('../images/globe.png') no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px 10px 0;
+}
+
+.navbar-brand {/* Align the text at the same position of the image */
+  padding-top: 10px;
+}
+.navbar-brand h1 { /* Modify the text*/
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1em; /* em is equal to the current font-size */
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #828181;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus { /* To remove any effect when the mouse is over the brand */
+  text-decoration: none;
+}
+
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {/* Shadow when passing the cursor over the menu */
+  background: #DADBDB;
+}
+#nav-list a span {
+  font-size: 1.8em; /* Increase the size in 80% */
+}
+
+#nav-list p a {
+  color: black;
+  text-align: center;
+  margin:2px;
+}
+/** END HEADER **/
+
+/** BODY Main Page**/
+.jumbotron {
+  max-height: 570px;
+  background:rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0 0 40px rgb(194, 194, 194);
+  margin-bottom: 40px;
+}
+.jumbotron p{
+  font-size: 1.3em;
+}
+.jumbotron h1{
+  font-size: 4em;
+}
+#box-t, #box-h ,#box-c, #box-w{
+  height: 200px;
+  width: 107%;
+  margin-bottom: 50px;
+  position: relative;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+#box-t:hover, #box-h:hover, #box-c:hover, #box-w:hover{
+  box-shadow: 0 3px 5px 3px #cccccc;
+}
+
+#box-t {
+  background: url('../images/Fig1.1.png') no-repeat;
+  background-position: center;
+  background-size: 250%;
+}
+
+#box-h{
+  background: url('../images/Fig2.1.png') no-repeat;
+  background-position: center;
+  background-size: 250%;
+}
+#box-c{
+  background: url('../images/Fig3.1.png') no-repeat;
+  background-position: center;
+  background-size: 250%;
+}
+#box-w {
+  background: url('../images/Fig4.1.png') no-repeat;
+  background-position: center;
+  background-size: 250%;
+}
+#box-t span, #box-h span, #box-c span, #box-w span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/** END BODY  Main Page**/
+
+/** BODY Comparison**/
+#main-comparison .jumbotron{
+  min-height: 900px;
+  background:rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0 0 40px rgb(194, 194, 194);
+  margin-bottom: 40px;
+}
+#box-tc, #box-hc ,#box-cc, #box-wc{
+  height: 300px;
+  width: 90%;
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid black;
+}
+
+#box-tc {
+  background: url('../images/Fig1.1.png') no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+
+#box-hc{
+  background: url('../images/Fig2.1.png') no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+#box-cc{
+  background: url('../images/Fig3.1.png') no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+#box-wc{
+  background: url('../images/Fig4.1.png') no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
+.comparison-clases{
+  background-color: black;
+  color:white;
+  width: 90%;
+  text-align: center;
+  background-position: center;
+  background-size: 90%;
+}
+
+/** END BODY Comparison**/
+
+/** BODY  data**/
+#tb-content .jumbotron{
+  min-height: 600px;
+  background:rgb(255, 255, 255);
+  color: black;
+  font-size: 15px;
+  box-shadow: 0 0 40px rgb(194, 194, 194);
+  margin: 50px;
+}
+#tb-content{
+  color:black;
+}
+
+/** END BODY  data**/
+/** BODY  plots**/
+#plots-content .jumbotron{
+  font-size: 15px;
+}
+img {
+  height: 300px;
+}
+/** END BODY  plots**/
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(226, 226, 226);
+}
+/* END FOOTER */
+
+/**************** MEDIA QUERIES *********************/
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  /* Main Page */
+  .container .jumbotron {
+    color: black;
+    height: 680px;
+  }
+  /* End Main Page */
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Main Page */
+  #box-t span, #box-h span, #box-c span, #box-w span {
+    font-size: 1.6em;
+  }
+  .jumbotron p{
+    font-size: 1.2em;
+  }
+  .jumbotron h1{
+    font-size: 3.5em;
+  }
+  /* End Main Page */
+  /** BODY Comparison**/
+  #main-comparison .jumbotron{
+    min-height: 700px;
+    background:rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 40px rgb(194, 194, 194);
+    margin-bottom: 40px;
+  }
+  #box-tc, #box-hc ,#box-cc, #box-wc{
+    height: 200px;
+    width: 90%;
+    margin-bottom: 20px;
+    position: relative;
+    border: 2px solid black;
+  }
+  /** END BODY Comparison**/
+/** BODY  plots**/
+#plots-content .jumbotron{
+  font-size: 12px;
+}
+img {
+  height: 250px;
+}
+/** END BODY  plots**/
+}
+
+/********** Samll devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Main Page */
+  .jumbotron {
+    max-height: 650px;
+  }
+  #box-t span, #box-h span, #box-c span, #box-w span {
+    font-size: 1.4em;
+  }
+  .jumbotron p{
+    font-size: 1em;
+  }
+  .jumbotron h1{
+    font-size: 3em;
+  }
+
+  #box-t, #box-h ,#box-c, #box-w{
+    height: 160px;
+    width: 110%;
+    margin-bottom: 20px;
+    position: relative;
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  /* Main Page */
+  /** BODY Comparison**/
+  #main-comparison .jumbotron{
+    min-height: 2000px;
+    background:rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 40px rgb(194, 194, 194);
+    margin-bottom: 40px;
+  }
+  #box-tc, #box-hc ,#box-cc, #box-wc{
+    height: 400px;
+    width: 500px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 2px solid black;
+    background-position: center;
+  }
+
+  .comparison-clases{
+    width: 500px;
+  }
+  /** END BODY Comparison**/
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+  #collapsable-nav a { /* Increase the font size when the device get smaller */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Reduce the icon size becuase it conserved the 1.8 original size*/
+    font-size: 1em;
+    margin-right: 5px;
+  }
+ #nav-list p{
+    margin: 0 0 0 250px;
+  }
+/* Main Page */
+.jumbotron {
+  max-height: 1300px;
+}
+
+#box-t span, #box-h span, #box-c span, #box-w span {
+  font-size: 1.2em;
+}
+.jumbotron p{
+  font-size: 1em;
+}
+.jumbotron h1{
+  font-size: 2em;
+}
+
+#box-t, #box-h ,#box-c, #box-w{
+  height: 165px;
+  width: 80%;
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid white;
+  overflow: hidden;
+}
+/* End Main Page */
+ /** BODY Comparison**/
+ #main-comparison .jumbotron{
+  min-height: 1500px;
+  background:rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0 0 40px rgb(194, 194, 194);
+  margin-bottom: 40px;
+}
+#box-tc, #box-hc ,#box-cc, #box-wc{
+  height: 300px;
+  width: 420px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid black;
+}
+.comparison-clases{
+  width: 420px;
+}
+/** BODY  plots**/
+img {
+  height: 280px;
+  
+}
+/** END BODY  plots**/
+/** END BODY Comparison**/
+
+
+}
+
+
+
+  
