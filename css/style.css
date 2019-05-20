@@ -5,7 +5,7 @@ body {
     font-family: 'Oxygen', sans-serif; /* www.google.com/fonts */
   }
 /** HEADER **/
-#header-nav {/* I whant that the header fill the wholw screen */
+#header-nav {/* I want that the header fill the whole screen */
   background-color: white; 
   border-radius: 0;
   border: 0;
@@ -304,8 +304,9 @@ img {
     margin-right: 5px;
   }
  #nav-list p{
-    margin: 0 0 0 250px;
+    margin: 0 0 0 150px;
   }
+
 /* Main Page */
 .jumbotron {
   max-height: 1300px;
@@ -322,8 +323,8 @@ img {
 }
 
 #box-t, #box-h ,#box-c, #box-w{
-  height: 165px;
-  width: 80%;
+  height: 170px;
+  width: 100%;
   margin-bottom: 20px;
   position: relative;
   border: 2px solid white;
@@ -332,25 +333,25 @@ img {
 /* End Main Page */
  /** BODY Comparison**/
  #main-comparison .jumbotron{
-  min-height: 1500px;
+  min-height: 1000px;
   background:rgb(255, 255, 255);
   color: black;
   box-shadow: 0 0 40px rgb(194, 194, 194);
   margin-bottom: 40px;
 }
 #box-tc, #box-hc ,#box-cc, #box-wc{
-  height: 300px;
-  width: 420px;
+  height: 150px;
+  width: 250px;
   margin-bottom: 20px;
   position: relative;
   border: 2px solid black;
 }
 .comparison-clases{
-  width: 420px;
+  width: 250px;
 }
 /** BODY  plots**/
 img {
-  height: 280px;
+  height: 150px;
   
 }
 /** END BODY  plots**/
