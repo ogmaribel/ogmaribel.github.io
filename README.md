@@ -32,5 +32,8 @@ The wind speed seems to increase the further away from the equator (0 Deg. Latit
 
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
 
-## Step 2 - Create a Climate App using the analysis made in the step 1
-![APP](Images/app.png)
+## Step 2 - HTML/CSS Web characteristics
+This web page was developed using several bootstrap tools:
+* The selection buttons have icons and the plot button has a dropdown section
+* The selection buttons also will disappear when the screen size is bellow to medium and instead it will be replaced by a menu button. This menu button will display the selections options when the user click on it and will scroll down all the content bellow.
+
