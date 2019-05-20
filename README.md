@@ -25,7 +25,7 @@ The cloudiness does not have a relationship with the latitude. The values inside
 
 ### Wind Speed
 The wind speed seems to increase the further away from the equator (0 Deg. Latitude).
-![Wind-Speed](Images/Fig4.1.png)
+![Wind-Speed](images/Fig4.1.png)
 
 
 
