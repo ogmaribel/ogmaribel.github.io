@@ -2,6 +2,11 @@
 An HTML/CSS page was created to present an analysis that compares the latitude and its consequences in some climate characteristics.
 url: https://ogmaribel.github.io/start
 
+## HTML/CSS Web characteristics
+This web page was developed using several bootstrap tools.
+There are 7 HTML files and 1 CSS file. Also were included some bootstrap libraries downloaded from https://getbootstrap.com/.
+The HTML files included the main structure of the web page and the CSS file all the format parameters, almost all the images and the media queries to adjust the page to several screen sizes.
+
 ## Hypothesis
 The weather changes as you get closer to the equator.
 
@@ -28,12 +33,4 @@ The wind speed seems to increase the further away from the equator (0 Deg. Latit
 ![Wind-Speed](images/Fig4.1.png)
 
 
-
-
-Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
-
-## Step 2 - HTML/CSS Web characteristics
-This web page was developed using several bootstrap tools.
-There are 7 HTML files and 1 CSS file. Also were included some bootstrap libraries downloaded from https://getbootstrap.com/.
-The HTML files included the main structure of the web page and the CSS file all the format parameters, almost all the images and the media queries to adjust the page to several screen sizes.
 
