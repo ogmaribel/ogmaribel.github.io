@@ -1,8 +1,13 @@
-body {
+/** FORMAT OF ALL THE CONTENT IN THE BODY DIVIDED IN HEADER, MAIN CONTENT AND FOOTER **/
+/** THE MAIN CONTENT IS DIFFERENT ACCORDING WITH THE PAGE **/
+/** THE BODY MAIN CONTENT FOR START PAGE, BODY COMPARISON FOR THE COMPARISON PAGE, BODY DATA FOR THE DATA PAGE AND BODY PLOTS FOR THE PLOTS PAGE  **/
+
+body {/* body general format */
     font-size: 16px;
     color: #0F0F0F;
     background-color: black;
     font-family: 'Oxygen', sans-serif; /* www.google.com/fonts */
+
   }
 /** HEADER **/
 #header-nav {/* I want that the header fill the whole screen */
@@ -50,6 +55,9 @@ body {
   margin:2px;
 }
 /** END HEADER **/
+
+
+
 
 /** BODY Main Page**/
 .jumbotron {
@@ -175,6 +183,7 @@ body {
 }
 
 /** END BODY  data**/
+
 /** BODY  plots**/
 #plots-content .jumbotron{
   font-size: 15px;
@@ -184,6 +193,9 @@ img {
 }
 /** END BODY  plots**/
 
+
+
+
 /* FOOTER */
 .panel-footer {
   margin-top: 10px;
@@ -192,6 +204,10 @@ img {
   background-color: rgb(226, 226, 226);
 }
 /* END FOOTER */
+
+
+
+/** THE SAME STRUCTURE IS FOLLOWED TO MAKE CHANGES DEPENDING ON THE SCREEN SIZE **/
 
 /**************** MEDIA QUERIES *********************/
 /********** Large devices only **********/
@@ -204,7 +220,7 @@ img {
   /* End Main Page */
 
 }
-
+/********** END Large devices only **********/
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Main Page */
@@ -218,6 +234,7 @@ img {
     font-size: 3.5em;
   }
   /* End Main Page */
+
   /** BODY Comparison**/
   #main-comparison .jumbotron{
     min-height: 700px;
@@ -234,6 +251,7 @@ img {
     border: 2px solid black;
   }
   /** END BODY Comparison**/
+
 /** BODY  plots**/
 #plots-content .jumbotron{
   font-size: 12px;
@@ -243,7 +261,7 @@ img {
 }
 /** END BODY  plots**/
 }
-
+/********** END Medium devices only **********/
 /********** Samll devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   /* Main Page */
@@ -269,6 +287,7 @@ img {
     overflow: hidden;
   }
   /* Main Page */
+
   /** BODY Comparison**/
   #main-comparison .jumbotron{
     min-height: 2000px;
@@ -292,10 +311,11 @@ img {
   /** END BODY Comparison**/
 
 }
+/********** END Samll devices only **********/
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-
+/** HEADER **/
   #collapsable-nav a { /* Increase the font size when the device get smaller */
     font-size: 1.2em;
   }
@@ -306,6 +326,7 @@ img {
  #nav-list p{
     margin: 0 0 0 150px;
   }
+/** END HEADER **/
 
 /* Main Page */
 .jumbotron {
@@ -331,6 +352,7 @@ img {
   overflow: hidden;
 }
 /* End Main Page */
+
  /** BODY Comparison**/
  #main-comparison .jumbotron{
   min-height: 1000px;
@@ -349,17 +371,17 @@ img {
 .comparison-clases{
   width: 250px;
 }
+/** END BODY Comparison**/
+
 /** BODY  plots**/
 img {
   height: 150px;
-  
+
 }
 /** END BODY  plots**/
-/** END BODY Comparison**/
-
 
 }
-
+/********** END Extra small devices only **********/
 
 
   
